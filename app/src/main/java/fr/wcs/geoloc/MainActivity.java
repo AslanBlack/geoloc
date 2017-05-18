@@ -96,6 +96,12 @@ public class MainActivity extends AppCompatActivity{
 
         locationManager.removeUpdates(locationListener);
     }
+
+    protected void onPause(){
+        super.onPause();
+
+        locationManager.removeUpdates(locationListener);
+    }
 }
 
 
